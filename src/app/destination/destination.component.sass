@@ -1,0 +1,64 @@
+.banner
+    color: #FFFFFF
+    display: flex
+    justify-content: space-between
+    align-content: center
+    background-image: linear-gradient(to right, #1D1823, #537FE7 100%) //color gradient for background
+    border-radius: 16px
+
+.banner__img img
+    width: 350px
+    height: 100%
+    clip-path: circle(81.5% at 17% 49%) //circle-shaped cutout on the right side
+    border-radius: 16px
+
+.banner__content
+    padding: 4% 45% 4% 4%
+    width: 100%
+    letter-spacing: 0em
+
+.banner__content h2
+    font-size: 40px
+    font-weight: 700
+    line-height: 47px
+    margin: 0 2px
+
+.banner__content h3
+    font-size: 40px
+    font-weight: 400
+    line-height: 47px
+    color: #C0EEF2
+    margin: 0 2px
+
+.banner__content p
+    font-size: 18px
+    font-weight: 400
+    line-height: 21px
+    margin: 25px 2px
+
+// Media queries for responsive adjustments 
+@media (max-width: 1500px)
+    .banner__content
+        padding: 4% 30% 4% 4%
+
+@media (max-width: 1100px)
+    .banner__content
+        padding: 4% 10% 4% 4%
+
+@media (max-width: 900px)
+    .banner
+        flex-direction: column //the banner scrolls down
+    .banner__content
+        padding: 4% 0% 20% 0%,
+    .banner__content h2, .banner__content h3
+        font-size: 34px
+        line-height: 39.84px
+        margin: 0 4%
+    .banner__content p
+        font-size: 16px
+        line-height: 18px
+        margin: 25px 4%
+    .banner__img img
+        width: 100%
+        height: auto
+        clip-path: circle(80.7% at 50% 11%) //Circle-shaped cutout fits at the bottom

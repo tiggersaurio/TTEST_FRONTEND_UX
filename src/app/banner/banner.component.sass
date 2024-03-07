@@ -1,0 +1,53 @@
+.banner
+  background-image: url('../../assets/img/banner.png')
+  color: #fff
+  padding:  5% 60% 5% 5% // Base padding for all screen sizes
+
+  background-size: cover
+  background-position: center 20%
+
+  h1
+    font-weight: 700
+    font-size: 58px
+    line-height: 67.97px
+
+  p
+    font-weight: 400
+    font-size: 20px
+    line-height: 23.44px
+
+  button
+    width: 152px
+    height: 38px
+    border-radius: 100px
+    border: none
+    background-color: #c20114
+    color: #fff
+    cursor: pointer
+
+  button:hover
+    font-weight: bolder
+    background-color: #c20114f3
+
+// Media queries for responsive adjustments 
+@media (max-width: 1500px)
+  .banner
+    padding: 5% 50% 5% 5%
+
+@media (max-width: 1100px)
+  .banner
+    padding: 5% 30% 5% 5%
+
+@media (max-width: 900px)
+  .banner
+    padding: 10% 2% 12% 2%
+    background-position: 66% 0 
+    background-size: 190%
+
+  h1
+    font-size: 32px
+    line-height: 37.5px
+
+  p
+    font-size: 14px
+    line-height: 16.41px

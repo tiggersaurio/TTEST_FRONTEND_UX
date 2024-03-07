@@ -1,0 +1,26 @@
+<nav>
+    <img (click)="toggleActive()" class="navbar__menu" src="../../assets/img/menu.png" alt="Icon - menu">
+    <a class="navbar__link" href="#">
+        <img class="navbar__logo" src="../../assets/img/logo.png" alt="Logo - Airline">
+    </a>
+    <div [ngClass]="{'active': isActive}" class="navbar">
+        <img (click)="toggleActive()" class="link--close" src="../../assets/img/close.png" alt="Icon - close">
+        <a class="navbar__link" href="#">Check-In</a>
+        <a class="navbar__link" href="#">Manage my booking</a>
+        <a class="navbar__link link--deploy" href="#">
+            Information
+            <ol>
+                <li>Help center</li>
+                <li>Flight state</li>
+                <li>Airplanes</li>
+                <li>Routes</li>
+            </ol>
+        </a>
+
+    </div>
+
+    <a class="navbar__link link--language" href="#">
+        <img src="../../assets/img/language.png" alt="Icon - language">
+        <span>English</span>
+    </a>
+</nav>

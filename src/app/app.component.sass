@@ -1,0 +1,35 @@
+.small
+    width: 25%,
+
+.large
+    width: 50%,
+
+.offers
+    display: flex,
+
+.offers__cont
+    display: block,
+    margin: 0 1%,
+
+.main
+    padding: 0 5%,
+    section
+        margin: 2% 0,
+    h2
+        font-size: 28px,
+        font-weight: 700,
+        line-height: 33px,
+        letter-spacing: 0em,
+        margin: 0 0 2% 0,
+
+// Media queries for responsive adjustments 
+@media (max-width: 900px)
+    .offers
+        flex-direction: column,
+    .small, .large
+        width: 100%,
+    .offers__cont
+        margin: 2% 0,
+    .main
+        padding: 0 2%,
+

@@ -1,0 +1,81 @@
+footer
+    letter-spacing: 0em
+
+.footer
+    background-color: #e7e7f7
+    display: flex
+    justify-content: space-between
+    padding: 0 5%
+
+.footer__logo
+    display: flex
+    align-items: center
+
+.footer__links
+    width: 70%
+    display: flex
+    justify-content: flex-end
+    a
+        color: #181823
+        font-size: 18px
+        font-weight: 400
+        line-height: 21.09px
+        text-decoration: none
+    a:hover
+        font-weight: bolder
+
+.links__container
+    margin: 0 4%
+    img
+        width: 50px
+        margin-right: 20px
+
+.links--title
+    font-size: 20px
+    font-weight: 700
+    line-height: 23px
+
+.footer__info
+    color: #9292A0
+    font-size: 14px
+    font-weight: 400
+    line-height: 16px
+    padding: 0 5%
+
+ul
+    list-style: none
+
+li
+    margin-bottom: 10px
+
+.links--media--mobile 
+    display: none //Hides in desktop view
+
+// Media queries for responsive adjustments 
+@media (max-width: 1300px)
+    .links__container
+        margin: 0 2%
+
+@media (max-width: 1000px)
+    .links--title
+        font-size: 18px
+        line-height: 21px
+    .footer__links
+        a
+            font-size: 16px
+            line-height: 19px
+    .footer__logo
+        img
+            width: 250px
+    .links__container
+        img
+            width: 30px
+            margin-right: 10px
+
+@media (max-width: 900px)
+    .footer, .footer__links
+        flex-direction: column
+    .links--media--mobile
+        display: block 
+    .links--media--desktop
+        display: none //Hides in mobile view
